@@ -56,7 +56,7 @@ The Data Set was downloaded from this link <https://d396qusza40orc.cloudfront.ne
 
 5. Merging the test and training set observations (for both X and y), since the test set and training set are independent (i.e. no overlapping in the observations) it is essentially binding by rows the testing and training sets.
 
-6. Adding a column ('activityName') to the mergedData of step 5, by merging it with the table of the activity_lables file. After the of step 5 and 6, the data set has 10299 observations and 68 variables (66 feature variables, one variable representing the activities, and one variable representing the subject).
+6. Adding a column ('activityName') to the mergedData of step 5, by merging it with the table of the activity_labels file. After the of step 5 and 6, the data set has 10299 observations and 68 variables (66 feature variables, one variable representing the activities, and one variable representing the subject).
 
 7. Change the names of the variables with more explicit names.
 
@@ -75,7 +75,7 @@ There are 68 variables in the tidy data set.
 The variable 'subject' contains an Integer that represents the id of the subject observed.
 The variable 'activityName' contains a String with the type of activity the subject was performing.
 And the rest of the variables (i.e. 66 variables) contain the mean of the mean or the mean of the standard deviation of a feature, for each subject-activity combination.
-Note: In the Raw Data the features have already been normalized and bounded within [-1,1], so you might find negative means of standard deviation. 
+Note: The original units of the variables starting with "time" (e.g. timeBodyAccMeanX.Mean) is time (s), and the initial units of the variables starting with "freq" (e.g. freqBodyAccStdZ.Mean) are in frequency (Hz). That said, the Raw Data were already normalized and bounded within [-1,1]. This also means that you might find negative means of standard deviations. 
 
 **Lets take two examples to describe the pattern on the 66 remaining variables:**
 
