@@ -21,6 +21,17 @@ It will prompt the user with an error and will stop the script if it cannot find
 You can download the folder here:
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
+**The script is going through the following steps:
+
+- Loads the data and maps the related names to the variables.
+- Extracts only the measurements on the mean and standard deviation for each measurement.
+- Merges the training and the test sets to create one data set.
+- Uses descriptive activity names to name the activities in the data set.
+- Appropriately labels the data set with descriptive feature names.
+- Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+
+
 **Remark:**
 
 Unfortunately due to a recent bug on the package, the files are first loaded into dataFrames, and then transformed to dataTables. So the loading part depending on the machine might take some time.
