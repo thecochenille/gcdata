@@ -21,7 +21,7 @@ It will prompt the user with an error and will stop the script if it cannot find
 You can download the folder here:
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
-**The script is going through the following steps:
+**The script is going through the following steps:**
 
 - Loads the data and maps the related names to the variables.
 - Extracts only the measurements on the mean and standard deviation for each measurement.
