@@ -23,6 +23,8 @@ You can download the folder here:
 
 **The script is going through the following steps:**
 
+*See also the CodeBook.md for more details about the processing of the data.*
+
 - Loads the data and maps the related names to the variables.
 - Extracts only the measurements on the mean and standard deviation for each measurement.
 - Merges the training and the test sets to create one data set.
