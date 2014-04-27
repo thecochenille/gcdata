@@ -6,12 +6,22 @@
 - The code book "CodeBook.md" for the Data Set.
 - The script "run_analysis.R" that contains all the steps of the analysis performed on the Raw data.
 
+
+**Some requirements to run the script:**
+
 To run the script you can use `source("run_analysis.R")` if you have the file on your working directory.
 Alternatively use `source(path)`, were `path` is the path were the file "run_analysis.R" resides.
 
 The script is using the package `"data.table"`.
 The first line of the script is loading the package: `library(data.table)`
 so for the script to run the package `"data.table"` needs to be installed, (run `install.packages("data.table")` if needed).
+
+Also the script assumes that you have the folder "UCI HAR Dataset" in your working directory unziped, and without to have changed the folder and files hierarchy.
+It will prompt the user with an error and will stop the script if it cannot find the required folder.
+You can download the folder here:
+<https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
+
+**Remark:**
 
 Unfortunately due to a recent bug on the package, the files are first loaded into dataFrames, and then transformed to dataTables. So the loading part depending on the machine might take some time.
 For more info on the loading function `fread()` bug:
