@@ -1,8 +1,7 @@
 # Study Design
-========================================
+
 
 The Data Set was downloaded from this link <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip> on the 20th of April 2014.
-
 
 
 ## Information regarding the Data Set
@@ -65,7 +64,7 @@ The Data Set was downloaded from this link <https://d396qusza40orc.cloudfront.ne
 
 
 # Code Book
-=========================================
+
 
 ## Description of the Variables
 
