@@ -64,7 +64,6 @@ setnames(mergedData, names(mergedData), gsub("\\-std\\(\\)", "Std", names(merged
 setnames(mergedData, names(mergedData), gsub("\\-mean\\(\\)", "Mean", names(mergedData)))
 
 # Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
-# Adding two columns: One for the subsject, and one fot the activity labels (rename before adding columns)
 print("Creates a second, independent tidy data set with the average of each variable for each activity and each subject.", quote=FALSE) 
 tidyData <- mergedData[, sapply(.SD, function(x) list(Mean=mean(x))), by=c("subject","activityName")]
 tidyData <- tidyData[order(subject),]
