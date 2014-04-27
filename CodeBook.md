@@ -75,13 +75,12 @@ There are 68 variables in the tidy data set.
 The variable 'subject' contains an Integer that represents the id of the subject observed.
 The variable 'activityName' contains a String with the type of activity the subject was performing.
 And the rest of the variables (i.e. 66 variables) contain the mean of the mean or the mean of the standard deviation of a feature, for each subject-activity combination.
-
+Note: In the Raw Data the features have already been normalized and bounded within [-1,1], so you might find negative means of standard deviation. 
 
 **Lets take two examples to describe the pattern on the 66 remaining variables:**
 
 - For example, the variable 'timeBodyAccMagMean.Mean' contains the mean of the mean of the feature 'timeBodyAccMagMean' for each subject and each activity.
 - As another example, the variable 'timeBodyAccMagStd' contains the mean of the standard deviation for each subject and each activity.
-
 
 ## List of the Variables
 
